@@ -517,6 +517,7 @@ void radix_sort_int(int* vec, const int length, int* buffer)
     }
   }
 
+  return;
   // count bit 22 - 31
 
   // phase 3: bit 22 - 31 occurence count
