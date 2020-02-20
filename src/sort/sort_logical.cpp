@@ -28,7 +28,7 @@
 #include <stdexcept>
 
 #include <sort/sort.h>
-#include <interface/openmphelper.h>
+#include <sort/openmphelper.h>
 
 #include <iostream>
 

@@ -5,7 +5,7 @@ CXX_STD      = CXX11
 PKG_LIBS     = $(SHLIB_OPENMP_CXXFLAGS) -L. -lSORT
 
 # libraries
-LIBSORT  = sort/sort_int.o sort/sort_logical.o interface/openmphelper.o
+LIBSORT  = sort/sort_int.o sort/sort_logical.o sort/openmphelper.o
 
 $(SHLIB): libSORT.a
 

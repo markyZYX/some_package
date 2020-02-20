@@ -24,7 +24,7 @@ You can contact the author at:
 
 #include <Rcpp.h>
 
-#include <interface/openmphelper.h>
+#include <sort/openmphelper.h>
 
 #ifdef _OPENMP
 #include <pthread.h>
