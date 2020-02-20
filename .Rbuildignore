@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^.*\.yml$
+^.*\.sh$
+^.*\.Rmd$
+^.*\.md$
+sort.png

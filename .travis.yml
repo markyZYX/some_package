@@ -1,0 +1,28 @@
+language: R
+cache: packages
+sudo: false
+warnings_are_errors: true
+
+matrix:
+  include:
+    - os: linux
+      r : release
+    - os: linux
+      r : devel
+    - os: osx
+      r : release
+
+r_packages:
+  - Rcpp
+
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export PATH="/usr/local/opt/llvm/bin:$PATH" &&
+    export LDFLAGS="-L/usr/local/opt/llvm/lib" &&
+    export CPPFLAGS="-I/usr/local/opt/llvm/include"; fi
+
+after_success:
+  - Rscript -e 'library(covr); codecov(quiet = FALSE)'
+
+env:
+  global:
+    - PKG_CFLAGS="-Wall -pedantic"

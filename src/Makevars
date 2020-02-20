@@ -1,0 +1,16 @@
+
+PKG_CXXFLAGS = $(SHLIB_OPENMP_CXXFLAGS)
+PKG_CPPFLAGS = -I.
+CXX_STD      = CXX11
+PKG_LIBS     = $(SHLIB_OPENMP_CXXFLAGS) -L. -lSORT
+
+# libraries
+LIBSORT  = sort/sort_int.o sort/sort_logical.o interface/openmphelper.o
+
+$(SHLIB): libSORT.a
+
+libSORT.a: $(LIBSORT)
+	$(AR) rcs libSORT.a $(LIBSORT)
+
+clean:
+	rm -f $(SHLIB) $(OBJECTS) $(LIBSORT) libSORT.a

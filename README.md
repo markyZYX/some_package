@@ -1,0 +1,19 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+<img src="sort.png" align="right" height="221" width="192" />
+
+[![Linux/OSX Build
+Status](https://travis-ci.org/MarcusKlik/sort.svg?branch=master)](https://travis-ci.org/MarcusKlik/sort)
+[![Windows Build
+status](https://ci.appveyor.com/api/projects/status/tw4fao2x09pkwep4?svg=true)](https://ci.appveyor.com/project/MarcusKlik/sort)
+[![License: AGPL
+v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-blue.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![codecov](https://codecov.io/gh/fstpackage/sort/branch/develop/graph/badge.svg)](https://codecov.io/gh/fstpackage/sort)
+
+## Overview
+
+The `sort` package provides very fast multi-threaded sorting of R
+vectors.
